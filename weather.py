@@ -24,8 +24,8 @@ a = x['weather'][0]['main']
 b = x['main']['temp']
 c = x['main']['temp_min']
 d = x['main']['temp_max']
-weather_report=f'It mostly {a} today.Current temperature in {City} is {b}°Celsius.High of {c}°Celsius and low of {d}°Celsius .Thank u sir'
+weather_report=f'It mostly {a} today.Current temperature in {City} is {b}°c.High of {d}°c and low of {c}°c .Thank u sir'
 language = 'en'
 output = gt(text = weather_report,lang = language)
 output.save('weather.mp3')
-os.system('mpv /data/data/com.termux/files/home/weather')
+os.system('mpv /data/data/com.termux/files/home/weather/weather.mp3')
